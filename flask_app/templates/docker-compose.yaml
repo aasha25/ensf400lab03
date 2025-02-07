@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  hello1:
+    build: .
+    image: hello:v0.2
+    container_name: hello1
+    networks:
+      - lab3-network
+
+  hello2:
+    build: .
+    image: hello:v0.2
+    container_name: hello2
+    networks:
+      - lab3-network
+
+networks:
+  lab3-network:
